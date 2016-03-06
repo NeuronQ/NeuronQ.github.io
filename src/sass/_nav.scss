@@ -1,0 +1,33 @@
+#navigation {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  
+  width: $sidenav-w;
+
+  ul.nav-links {
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      position: relative;
+      height: 100px;
+    }
+    li a {
+      display: block;
+      position: absolute;
+      
+      text-transform: uppercase;
+      line-height: 55px;
+      padding: 0 20px;
+
+      transform-origin: 0 0;
+      transform: rotateZ(-90deg) translate(-100%);
+    }
+  }
+}

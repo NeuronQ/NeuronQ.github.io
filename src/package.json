@@ -1,0 +1,24 @@
+{
+  "name": "neuronq.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrent \"npm run build\" \"npm run watch\" \"npm run serve\"",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "serve": "lite-server"
+  },
+  "author": "Andrei Notna",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-ejs": "^2.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "js-yaml": "^3.5.3"
+  },
+  "devDependencies": {}
+}

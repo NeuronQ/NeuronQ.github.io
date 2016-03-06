@@ -1,0 +1,11 @@
+# built site
+dist/
+
+# npm modules
+src/node_modules/
+
+# IDE/editors
+*.sublime-*
+
+# Caches and temp files
+.sass-cache/

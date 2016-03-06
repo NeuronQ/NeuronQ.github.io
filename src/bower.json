@@ -1,0 +1,22 @@
+{
+  "name": "neuronq.github.io",
+  "authors": [
+    "NeuronQ <io@neuronq.ro>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "Private",
+  "homepage": "http://neuronq.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "../dist/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Materialize": "materialize#^0.97.5"
+  }
+}
