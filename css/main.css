@@ -1,0 +1,41 @@
+/* line 1, F:/wip/neuronq.github.io/src/sass/_general.scss */
+body {
+  padding-left: 100px;
+  background: #eee; }
+
+/* line 1, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+#navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px; }
+  /* line 13, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+  #navigation ul.nav-links {
+    margin: 0;
+    padding: 0; }
+    /* line 16, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+    #navigation ul.nav-links li {
+      display: block;
+      position: relative;
+      height: 100px; }
+    /* line 21, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+    #navigation ul.nav-links li a {
+      display: block;
+      position: absolute;
+      text-transform: uppercase;
+      line-height: 55px;
+      padding: 0 20px;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      -webkit-transform: rotateZ(-90deg) translate(-100%);
+              transform: rotateZ(-90deg) translate(-100%); }

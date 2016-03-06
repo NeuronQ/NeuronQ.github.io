@@ -1,5 +1,0 @@
-{
-  "port": 8666,
-  "files": ["*"],
-  "server": { "baseDir": "../dist" }
-}
