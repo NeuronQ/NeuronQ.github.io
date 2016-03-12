@@ -13,7 +13,7 @@ var fs = require('fs');
 gulp.copy = function (src, dest) {
   return gulp.src(src, {base: '.'})
     .pipe(gulp.dest(dest));
-}
+};
 
 
 gulp.task('default', ['ejs-templates', 'scripts-copy', 'sass', 'images-copy']);
@@ -27,7 +27,7 @@ gulp.task('ejs-templates', function () {
   return gulp.src('./templates/**/[^_]*.ejs')
     .pipe(ejs(content)).on('error', gutil.log)
     .pipe(rename({extname: '.html'}))
-    .pipe(gulp.dest('../dist'))
+    .pipe(gulp.dest('../dist'));
 });
 
 
@@ -36,7 +36,7 @@ gulp.task('ejs-templates', function () {
  */
 var sass_options = {
   sourceComments: true
-}
+};
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass(sass_options).on('error', sass.logError))
