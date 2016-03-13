@@ -1,9 +1,20 @@
 /* line 1, F:/wip/neuronq.github.io/src/sass/_general.scss */
 body {
-  padding-left: 100px;
-  background: #eee; }
+  background: #fff; }
 
-/* line 1, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+/* Transitions */
+/* line 10, F:/wip/neuronq.github.io/src/sass/_general.scss */
+.trans, .trans-r, .trans-r * {
+  transition: all 300ms ease-in-out; }
+
+/* line 4, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+body {
+  padding-left: 100px; }
+  /* line 6, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+  body.expanded-nav {
+    padding-left: 155px; }
+
+/* line 11, F:/wip/neuronq.github.io/src/sass/_nav.scss */
 #navigation {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,16 +30,16 @@ body {
   bottom: 0;
   left: 0;
   width: 50px; }
-  /* line 13, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+  /* line 23, F:/wip/neuronq.github.io/src/sass/_nav.scss */
   #navigation ul.nav-links {
     margin: 0;
     padding: 0; }
-    /* line 16, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+    /* line 26, F:/wip/neuronq.github.io/src/sass/_nav.scss */
     #navigation ul.nav-links li {
       display: block;
       position: relative;
       height: 100px; }
-    /* line 21, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+    /* line 31, F:/wip/neuronq.github.io/src/sass/_nav.scss */
     #navigation ul.nav-links li a {
       display: block;
       position: absolute;
@@ -39,3 +50,11 @@ body {
               transform-origin: 0 0;
       -webkit-transform: rotateZ(-90deg) translate(-100%);
               transform: rotateZ(-90deg) translate(-100%); }
+
+/* line 44, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+body.expanded-nav #navigation {
+  width: 105px; }
+  /* line 47, F:/wip/neuronq.github.io/src/sass/_nav.scss */
+  body.expanded-nav #navigation li a {
+    -webkit-transform: none;
+            transform: none; }
