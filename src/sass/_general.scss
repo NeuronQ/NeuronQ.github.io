@@ -1,8 +1,12 @@
 body {
-  padding-left: $sidenav-w + 50px;
-  background: #eee;
+  background: #fff;
 }
 
 #header {
 
+}
+
+/* Transitions */
+.trans, .trans-r, .trans-r * {
+    transition: all 300ms ease-in-out;
 }

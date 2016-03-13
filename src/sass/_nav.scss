@@ -1,3 +1,13 @@
+$sidenav-w: 50px;
+$sidenav-expanded-w: 105px;
+
+body {
+  padding-left: $sidenav-w + 50px;
+  &.expanded-nav {
+    padding-left: $sidenav-expanded-w + 50px;
+  }
+}
+
 #navigation {
   display: flex;
   flex-flow: column nowrap;
@@ -23,11 +33,18 @@
       position: absolute;
       
       text-transform: uppercase;
-      line-height: 55px;
+      line-height: $sidenav-w + 5px;
       padding: 0 20px;
 
       transform-origin: 0 0;
       transform: rotateZ(-90deg) translate(-100%);
     }
+  }
+}
+body.expanded-nav #navigation {
+  width: $sidenav-expanded-w;
+
+  li a {
+    transform: rotateZ(0deg);
   }
 }

@@ -66,5 +66,6 @@ gulp.task('scripts-copy', function () {
  */
 gulp.task('watch', function () {
   gulp.watch('./templates/**/*.ejs', ['ejs-templates']);
+  gulp.watch('./scripts/**/*', ['scripts-copy']);
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
