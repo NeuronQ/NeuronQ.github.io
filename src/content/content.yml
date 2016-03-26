@@ -7,17 +7,84 @@ page_work:
   filter_by_tags:
     - front-end web development
     - back-end web development
-    - mobile (hybrid)
+    - mobile apps development (hybrid)
     - web design
     - branding
     - system administration
   projects:
-    - name: CCI English
-      link: https://www.facebook.com/ccienglish/
-    - name: Done Hedgefund
+    - employer: Rivert
+      tags:
+        - back-end web development
+        - mobile apps development (hybrid)
+      techs:
+        - Laravel
+        - PHP
+        - MongoDB
+    - employer: Zopyo
+      tags:
+        - front-end web development
+        - back-end web development
+      techs:
+        - Laravel
+        - PHP
+        - Polymer
+        - AWS (EC2, RDS, EMR)
+        - Node.js
+        - Kue
+        - Redis
+        - Python
+        - mrjob (for Hadoop on AWS EMR)
+        - MongoDB
+        - Cordova
+        - Selenium/Webdriver
+        - Linux (Ubuntu)
+    - employer: Otonomic
+      tags:
+        - back-end web development
+      techs:
+        - WordPress
+        - PHP
+        - Backbone.js, Angular 1
+        - MySQL
+    - project: Done Hedgefund
       link: http://www.done.nl/
-    - name: Jezabel Coffee
+      tags:
+        - front-end web development
+        - back-end web development
+      employer: New Tribe Agency
+      techs:
+        - WordPress
+        - PHP
+        - MySQL
+    - project: Jezabel Coffee
       link: http://www.jezabelcafe.ro/
+      tags:
+        - front-end web development
+        - back-end web development
+      employer: New Tribe Agency
+      techs:
+        - WordPress
+        - PHP
+        - MySQL
+    - project: CCI English
+      link: https://www.facebook.com/ccienglish/
+      tags:
+        - front-end web development
+        - back-end web development
+      employer: CCI English
+      techs:
+        - Django
+        - Django CMS
+        - Python
+        - MySQL
+    - employer: Finarta via VWorker
+      tags:
+        - front-end web development
+        - back-end web development
+      techs:
+        - Django
+        - Python
+        - MySQL
 page_skills:
   software_development:
     web_back_end:
@@ -50,7 +117,7 @@ page_skills:
         - WordPress
         - DjangoCMS
       ECommerce plaforms:
-        - name: WooCommerce
+        - WooCommerce
         - Magento
         - PrestaShop
       APIs:
