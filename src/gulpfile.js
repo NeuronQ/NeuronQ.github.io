@@ -38,7 +38,7 @@ var sass_options = {
   sourceComments: true
 };
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('./sass/main.scss')
     .pipe(sass(sass_options).on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest('../dist/css'));
