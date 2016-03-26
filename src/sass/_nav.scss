@@ -17,8 +17,9 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  
   width: $sidenav-w;
+
+  font-family: $titles-font;
 
   ul.nav-links {
     margin: 0;

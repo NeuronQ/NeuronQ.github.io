@@ -1,1 +1,126 @@
-title: Andrei Notna
+title: Neuron Q
+
+page_home:
+  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aperiam, numquam ad aspernatur, aliquid accusantium rem laborum recusandae ut nisi assumenda velit sequi quasi, officiis officia enim reprehenderit ex harum!
+
+page_work:
+  filter_by_tags:
+    - front-end web development
+    - back-end web development
+    - mobile (hybrid)
+    - web design
+    - branding
+    - system administration
+  projects:
+    - name: CCI English
+      link: https://www.facebook.com/ccienglish/
+    - name: Done Hedgefund
+      link: http://www.done.nl/
+    - name: Jezabel Coffee
+      link: http://www.jezabelcafe.ro/
+page_skills:
+  software_development:
+    web_back_end:
+      frameworks:
+        - name: Laravel
+          language: PHP
+        - name: Express
+          language: Node.JS
+        - name: Django
+          language: Python
+        - name: Ruby on Rails
+          language: Ruby
+      databases:
+        - MySQL / MariaDB
+        - MongoDB
+      testing:
+        - Laravel Unit & Integration Tests
+        - Jasmine for Node.js
+        - Webdriver & Selenium (E2E)
+        - Cucumber.js / Gherkin
+      API design:
+        - REST L2
+        - Basic API automated testing with Postman scripts
+      platforms:
+        - name: AWS
+          details: EC2, RDS
+        - name: Linux
+          details: Ubuntu Server
+      CMSs:
+        - WordPress
+        - DjangoCMS
+      ECommerce plaforms:
+        - name: WooCommerce
+        - Magento
+        - PrestaShop
+      APIs:
+        - Mandrill
+        - PayPal
+        - Stripe
+        - MixPanel PHP
+        - Intercom REST
+        - Twillio
+    big_data:
+      - AWS EMR Hadoop with mrjob (Python)
+    web_front_end:
+      technogies:
+        - Javascript (ES6, TypeScript)
+        - WebComponents
+        - HTML5, CSS3/4
+      frameworks:
+        - Angular
+        - Polymer
+        - Backbone
+      libraries:
+        - jQuery
+        - Underscore/Lodash
+        - Charting: C3, Flot
+        - D3
+        - Vanilla :)
+      styling:
+        - Flexbox
+        - CSS4 selectors
+        - SASS & Compass
+        - LESS
+        - Bootstrap styling framework
+        - Materialize CSS framework
+      APIs:
+        - Google Analytics
+        - MixPanel
+        - Intercom
+        - Contentful
+      tools:
+        - Gulp
+        - Grunt
+        - Webpack
+      testing:
+        - Jasmine
+    mobile_hybrid:
+      - Cordova
+    ai_and_machine_learning:
+      - familiarity with general principles and terminology
+      - SciPy, NumPy, NLTK (Python)
+    general_software_development:
+      - Version control systems: Git
+      - OOP design patterns
+      - Functional programming patterns
+      - Algorithms
+      - Clojure & ClojureScript
+      - Java
+      - Matlab/Octave
+      - C
+    mobile_native:
+      - Android
+  project_management:
+    - project leadership: team of less than 5
+    - technical co-founder: SaaS business
+  product_development:
+    - ECommerce related SaaS
+  uxi_design:
+    - wireframing
+      - Balsamiq, Moqups
+      - Whiteboard & Markers :)
+    - graphical design:
+      - Adobe Photoshop
+      - Adobe Photoshop
+      - Pen & Paper :)
