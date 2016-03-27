@@ -7,7 +7,7 @@
     "start": "concurrent \"npm run build\" \"npm run watch\" \"npm run serve\"",
     "build": "gulp",
     "watch": "gulp watch",
-    "serve": "lite-server"
+    "serve": "cd ../dist && lite-server"
   },
   "author": "Andrei Notna",
   "license": "ISC",

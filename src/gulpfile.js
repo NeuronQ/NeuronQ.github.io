@@ -22,8 +22,8 @@ gulp.task('default', ['ejs-templates', 'scripts-copy', 'sass', 'images-copy']);
 /*
  * Templates
  */
-var content = yaml.safeLoad(fs.readFileSync('./content/content.yml', 'utf8'));
 gulp.task('ejs-templates', function () {
+  var content = yaml.safeLoad(fs.readFileSync('./content/content.yml', 'utf8'));
   return gulp.src('./templates/**/[^_]*.ejs')
     .pipe(ejs(content)).on('error', gutil.log)
     .pipe(rename({extname: '.html'}))
@@ -35,7 +35,8 @@ gulp.task('ejs-templates', function () {
  * Styles
  */
 var sass_options = {
-  sourceComments: true
+  sourceComments: true,
+  includePaths: ['sass']
 };
 gulp.task('sass', function () {
   return gulp.src('./sass/main.scss')
@@ -65,7 +66,7 @@ gulp.task('scripts-copy', function () {
  * Watch
  */
 gulp.task('watch', function () {
-  gulp.watch('./templates/**/*.ejs', ['ejs-templates']);
+  gulp.watch(['./templates/**/*.ejs', './content/**/*'], ['ejs-templates']);
   gulp.watch('./scripts/**/*', ['scripts-copy']);
   gulp.watch('./sass/**/*.scss', ['sass']);
 });

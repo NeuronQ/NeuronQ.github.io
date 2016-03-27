@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<% p = root.page
+
+%><!DOCTYPE html>
 <html>
 <head>
-  <title><%= title %></title>
+  <title><%= title + (p.title ? ' | ' + p.title : '') %></title>
 
   <!-- Unicode ftw -->
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>

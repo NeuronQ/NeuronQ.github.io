@@ -1,9 +1,14 @@
 title: Neuron Q
 
+page: null
+
 page_home:
+  title: Andrei A | Neuron Q
   text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aperiam, numquam ad aspernatur, aliquid accusantium rem laborum recusandae ut nisi assumenda velit sequi quasi, officiis officia enim reprehenderit ex harum!
 
 page_work:
+  browser_title: Work
+  title: My Work
   filter_by_tags:
     - front-end web development
     - back-end web development
@@ -85,6 +90,7 @@ page_work:
         - Django
         - Python
         - MySQL
+
 page_skills:
   software_development:
     web_back_end:
@@ -191,3 +197,5 @@ page_skills:
       - Adobe Photoshop
       - Adobe Photoshop
       - Pen & Paper :)
+
+page_contact:

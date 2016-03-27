@@ -13,6 +13,8 @@ npm install -g lite-server
 npm start
 ```
 
+**Note:** If using **Sublime Text** on Windows 8 or 10, set `"atomic_save": true` to prevent weird gulp watch issues (mostly regarding gulp-sass).
+
 ### How to build
 
 ```
