@@ -36,11 +36,11 @@
         <div class="col m6 s12">
           <div class="item project">
             <div class="main-box z-depth-1">
-              <div class="title">
+              <div class="title">                
+                <% if (project.employer && project.project && project.employer != project.project) { %>
+                  <div class="project"><%= project.project %></div> @
+                <% } %>                
                 <div class="employer"><%= project.employer %></div>
-                <% if (project.name) { %>
-                  <div class="project">- <%= project.name %></div>   
-                <% } %>
               </div>
               <div class="techs">
                 <% project.techs.forEach(tech => { %>

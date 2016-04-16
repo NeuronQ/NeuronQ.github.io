@@ -18,7 +18,7 @@ page_work:
     - system administration
   projects:
     - employer: Rivert
-      name: multiple web back-end, web front-end, mobile-apps and web infrastructure projects
+      project: Multiple web back-end, web front-end, mobile-apps and web infrastructure projects
       tags:
         - back-end web development
         - mobile apps development - hybrid
