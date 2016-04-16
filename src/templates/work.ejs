@@ -8,35 +8,54 @@
 
 <% include _header %>
 
-
-
 <main id="main">
 
   <header id="header">
       <h1><%= p.title %></h1>
   </header>
 
-  <p>Testing deployment in new setup.</p>
-
-  <pre>
-    <%= JSON.stringify(p) %>
-  </pre>
-
-  <button class="btn btn-block toggle-sidebar">Toggle sidebar</button>
-  <a href="/index.html">Home</a>
-
-  <hr>
-
-  <div class="row">
-    <div class="col l3 m6 s12">1</div>
-    <div class="col l3 m6 s12">2</div>
-    <div class="col l3 m6 s12">3</div>
-    <div class="col l3 m6 s12">4</div>
-    <div class="col l3 m6 s12">5</div>
-    <div class="col l3 m6 s12">6</div>
-    <div class="col l3 m6 s12">7</div>
-    <div class="col l3 m6 s12">8</div>
-  </div>
+  <section class="projects">
+    
+    <div class="filters-bar">
+      <div class="filter-by filter-by-tags">
+        <div class="filter-by-label">
+          Filter by type
+        </div>
+        <div class="tags">
+          <% p.filter_by_tags.forEach(tag => { %>
+            <div class="tag chip" data-tag-name="<%= tag %>">
+              <%= tag.replace('_', ' ') %>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="items row">
+      <% p.projects.forEach(project => { %>
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1">
+              <div class="title">
+                <div class="employer"><%= project.employer %></div>
+                <% if (project.name) { %>
+                  <div class="project">- <%= project.name %></div>   
+                <% } %>
+              </div>
+              <div class="techs">
+                <% project.techs.forEach(tech => { %>
+                  <div class="tech chip chip-small"><%- tech %></div>
+                <% }) %>
+              </div> 
+            </div><!-- /.main-box -->
+            <div class="tags">
+              (<%- project.tags.map(tag => `<div class="tag">${tag}</div>`).join(', ') %>)
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </section>
 
 </main>
 

@@ -12,19 +12,20 @@ page_work:
   filter_by_tags:
     - front-end web development
     - back-end web development
-    - mobile apps development (hybrid)
+    - mobile apps development - hybrid
     - web design
     - branding
     - system administration
   projects:
     - employer: Rivert
+      name: multiple web back-end, web front-end, mobile-apps and web infrastructure projects
       tags:
         - back-end web development
-        - mobile apps development (hybrid)
+        - mobile apps development - hybrid
       techs:
         - Laravel
         - PHP
-        - MongoDB
+        - MySQL
     - employer: Zopyo
       tags:
         - front-end web development
@@ -38,7 +39,7 @@ page_work:
         - Kue
         - Redis
         - Python
-        - mrjob (for Hadoop on AWS EMR)
+        - Mrjob (for Hadoop on AWS EMR)
         - MongoDB
         - Cordova
         - Selenium/Webdriver
@@ -49,7 +50,8 @@ page_work:
       techs:
         - WordPress
         - PHP
-        - Backbone.js, Angular 1
+        - Backbone.js
+        - Angular 1
         - MySQL
     - project: Done Hedgefund
       link: http://www.done.nl/

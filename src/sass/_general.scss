@@ -9,6 +9,7 @@ body {
   background: url(/img/bg-plane1.jpg);
   background-position: 100% 0;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #header {
@@ -25,9 +26,112 @@ body {
   border-width: 0 1px 1px 0;
 }
 
+
 /**
  * Transitions
  */
 .trans, .trans-r, .trans-r * {
     transition: all 300ms ease-in-out;
+}
+
+
+/**
+ * Chips
+ */
+.chip {
+  background: $primary-color;
+  color: $inverse-text-color;
+}
+.chip-small {
+  padding: 0 8px;
+  height: auto;
+  line-height: 23px;
+  margin-bottom: 4px;
+}
+
+
+/**
+ * Projects
+ */
+.projects {
+  // filters bar
+  .filters-bar {
+    .filter-by {
+        text-align: center;
+        line-height: 3.75rem;
+        margin: 0 0 10px 0;
+      .filter-by-label {
+        display: inline-block;
+        line-height: 32px;
+        margin: 0 5px 0 0;
+      }
+      &.filter-by-tags {
+        display: inline-block;
+        .tags {
+          .tag {
+            
+          }
+        }
+      }
+    }
+  }
+  // items
+  .items {
+    .project {
+      
+      
+      
+      margin-bottom: 10px;      
+      
+      .main-box {
+        position: relative;
+        height: 200px;
+        background: url(/img/misc/light-bulb-image-583x387.jpg) 50% 50%;
+        background-size: cover;
+        
+        .title {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          background: rgba(51, 51, 51, 0.89);;
+          padding: 10px;
+          color: $inverse-text-color;
+          
+          font-family: $titles-font;
+          
+          > * {
+            display: inline;
+          }
+        }
+        
+        .techs {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.2);
+          padding: 10px;
+          .tech {
+            background: #123;
+          }
+        }
+      }
+      
+      .tags {
+        padding: 10px;
+        text-align: center;
+        
+        &, * {
+          text-align: center;
+          font-style: italic;
+        }
+        
+        .tag {
+          display: inline-block;
+          opacity: 0.75;
+        }
+      }
+    }
+  }
 }
