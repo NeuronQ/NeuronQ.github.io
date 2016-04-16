@@ -69,4 +69,5 @@ gulp.task('watch', function () {
   gulp.watch(['./templates/**/*.ejs', './content/**/*'], ['ejs-templates']);
   gulp.watch('./scripts/**/*', ['scripts-copy']);
   gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./images/**', ['images-copy']);
 });

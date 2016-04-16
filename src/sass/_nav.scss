@@ -1,10 +1,10 @@
 $sidenav-w: 50px;
 $sidenav-expanded-w: 105px;
 
-body {
-  padding-left: $sidenav-w + 50px;
-  &.expanded-nav {
-    padding-left: $sidenav-expanded-w + 50px;
+#main {
+  padding-left: $sidenav-w + 30px;
+  .expanded-nav & {
+    padding-left: $sidenav-expanded-w + 30px;
   }
 }
 
@@ -19,6 +19,8 @@ body {
   left: 0;
   width: $sidenav-w;
 
+  background: $main-bg-color;
+  
   font-family: $titles-font;
 
   ul.nav-links {

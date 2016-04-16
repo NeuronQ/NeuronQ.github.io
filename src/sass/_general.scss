@@ -1,12 +1,28 @@
 /**
  * General
  */
+html {
+  height: 100%;
+}
 body {
-  background: #fff;
+  height: 100%;  
+  background: url(/img/bg-plane1.jpg);
+  background-position: 100% 0;
+  background-size: cover;
 }
 
 #header {
 
+}
+
+#main {
+  max-width: 992px;
+  overflow: hidden;
+  padding: 30px;
+  background: $main-bg-color;
+  border-radius: 0 0 4px 0;
+  border: solid $main-border-color;
+  border-width: 0 1px 1px 0;
 }
 
 /**
