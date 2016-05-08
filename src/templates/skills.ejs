@@ -1,0 +1,112 @@
+<% p = root.page = page_skills -%>
+<% include _head %>
+
+</head>
+
+<body class="intro-mode expanded-nav trans page-skills">
+
+<% include _header %>
+
+<main id="main">
+
+  <header id="header">
+      <h1>
+        <%= p.title %>
+        <div class="pull-right tag chip expand-or-collapse-all-skills-btn do-expand-or-collapse-all-skills">
+          <span class="text-expand">
+            <strong>+</strong> Expand All
+          </span>
+          <span class="text-collapse hide">
+            <strong>-</strong> Collapse All
+          </span>
+        </div>
+      </h1>
+  </header>
+  
+  <section class="skills">
+  <% p.skills.forEach(section => { %>
+  
+    <h3><%- section.title %></h3>
+    
+    <% if (section.categories) { %>    
+    
+      <ul class="collapsible popout" data-collapsible="expandable">
+      
+        <% section.categories.forEach(cat => { %>
+        
+          <li>
+            <div class="collapsible-header <%= cat.expanded ? 'active' : '' %>">
+              <%- cat.title %>
+              <% if (cat.language) { %>
+                <span class="pull-right"><%- cat.language %></span>
+              <% } %>
+            </div>
+            <div class="collapsible-body">
+                
+              <% if (cat.items) { %>
+              
+                <% if (typeof cat.items[0] === "string") { %>
+                
+                  <ul class="collection">
+                    <% cat.items.forEach(item => { %>             
+                      <li class="collection-item"><%- item %></li>
+                    <% }); /* cat.items.forEach item */ %>
+                  </ul>
+                  
+                <% } else { %>
+                
+                  <ul class="collapsible collapsible-light collapsible-inverted" data-collapsible="expandable">
+                    <% cat.items.forEach(item => { %>
+                      <li>
+                        <div class="collapsible-header <%= item.expanded ? 'active' : '' %>">
+                          <%- item.name %>
+                          <% if (item.language) { %>
+                            <span class="pull-right"><%- item.language %></span>
+                          <% } %>
+                        </div>
+                        <div class="collapsible-body">
+                          <%- item.desc ? `<p>${item.desc}</p>` : item.content %>
+                        </div>
+                      </li>
+                    <% }); /* cat.items.forEach item */ %>
+                  </ul>
+                  
+                <% } %>
+              
+              <% } else { %>
+              
+                <%- cat.desc ? `<p>${cat.desc}</p>` : cat.content %>
+              
+              <% } %>
+              
+            </div>
+          </li>
+        
+        <% }); /* section.categories.forEach cat */ %>
+        
+      </ul>      
+    
+    <% } else if (section.items) { %>
+    
+      <ul class="collection">
+        <% for (var item of section.items) { %>
+          <li class="collection-item"><%- item %></li>
+        <% } %>
+      </ul>
+    
+    <% } else { %>
+    
+      <%- section.desc ? `<p>${section.desc}</p>` : section.content %>
+    
+    <% } %>
+  
+  <% }); /* p.skills.forEach section */ %>
+  </section>
+
+</main>
+
+<% include _footer %>
+
+</body>
+ 
+</html>

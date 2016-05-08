@@ -1,5 +1,4 @@
-<% p = root.page = page_home %>
-
+<% p = root.page = page_home -%>
 <% include _head %>
 
 </head>
@@ -9,14 +8,27 @@
 <% include _header %>
 
 <main id="main" class="trans">
-  <p>Testing deployment in new setup now.</p>
+  
+  <h1><%- p.title %></h1>
 
-  <pre>
-    <%= JSON.stringify(p) %>
-  </pre>
+  <p>
+    I'm a <strong>full stack web developer</strong>, but I tend to love servers more than browsers :)
+  </p>
+  
+  <p>
+    (I also happen to have decent project-management skills, a dash of entrepreneurial
+    spirit, some UX/I skills, passable graphic design skills, a passion for
+    AI&nbsp;&amp;&nbsp;Machine&nbsp;Learning stuff and, strangely, quite some knowledge
+    of topics from the biotech/medicine area.)
+  </p>
+  
+  <p>
+    But really, <strong>what I like to do is write solid code</strong> that
+    ends up in shipped <strong>on time</strong> web apps that <strong>solve
+    real problems</strong>!
+  </p>
 
-  <button class="btn btn-block toggle-sidebar">Toggle sidebar</button>
-  <a href="/work.html">Work</a>
+  <!--<button class="btn btn-block toggle-sidebar">Toggle sidebar</button>-->
 
 </main>
 

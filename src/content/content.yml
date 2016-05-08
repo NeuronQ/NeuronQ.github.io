@@ -3,7 +3,7 @@ title: Neuron Q
 page: null
 
 page_home:
-  title: Andrei A | Neuron Q
+  title: Andrei Anton | Neuron Q
   text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aperiam, numquam ad aspernatur, aliquid accusantium rem laborum recusandae ut nisi assumenda velit sequi quasi, officiis officia enim reprehenderit ex harum!
 
 page_work:
@@ -17,19 +17,20 @@ page_work:
     - branding
     - system administration
   projects:
-    - employer: Rivert
-      project: Multiple web back-end, web front-end, mobile-apps and web infrastructure projects
+    - project: Amazer viral socia marketing web-app
+      # link: http://www.amazer.me/
       tags:
         - back-end web development
-        - mobile apps development - hybrid
-      techs:
-        - Laravel
-        - PHP
-        - MySQL
-    - project: Zopyo
-      tags:
         - front-end web development
+      techs:
+        - Facebook OpenGraph API
+        - HTML2Canvas
+        - WordPress
+    - project: Zopyo
+      # link: http://www.zopyo.com
+      tags:
         - back-end web development
+        - front-end web development
       techs:
         - Laravel
         - PHP
@@ -45,6 +46,16 @@ page_work:
         - Selenium/Webdriver
         - Linux (Ubuntu)
       visibility: confidential
+    - employer: Rivert
+      project: Multiple web back-end, web front-end, mobile-apps and web infrastructure projects
+      tags:
+        - back-end web development
+        - mobile apps development - hybrid
+      techs:
+        - Laravel
+        - CodeIgniter
+        - PHP
+        - MySQL
     - employer: Otonomic
       tags:
         - back-end web development
@@ -52,8 +63,20 @@ page_work:
         - WordPress
         - PHP
         - Backbone.js
-        - Angular 1
+        - Angular
         - MySQL
+    - project: Deep Thought Admin UI Frontend Construction Kit
+      link: http://inprogress.neuronq.ro/deep-thought/index.html
+      tags:
+        - front-end web development
+      techs:
+        - jQuery
+        - jQuery UI
+        - Flot
+        - Bootstrap
+        - Node.js
+        - Express
+        - Jade
     - project: Done Hedgefund
       link: http://www.done.nl/
       tags:
@@ -74,7 +97,7 @@ page_work:
         - WordPress
         - PHP
         - MySQL
-    - project: CCI English
+    - project: CCI English website & online-tutoring marketplace
       link: https://www.facebook.com/ccienglish/
       tags:
         - front-end web development
@@ -85,129 +108,242 @@ page_work:
         - Django CMS
         - Python
         - MySQL
-    - employer: Finarta via VWorker
+    - project: Art Gallery Management System
+      employer: Finarta via VWorker
       tags:
-        - front-end web development
         - back-end web development
+        - front-end web development
       techs:
         - Django
         - Python
+        - Microservices
+        - XML-RPC
         - MySQL
-    - project: http://www.colaistepobailbheanntrai.com/
-      visibility: cheap
-    - project: https://wrapbootstrap.com/theme/madmin-admin-theme-WB042R743
-    - project: http://www.amazer.me/
-    - project: http://inprogress.neuronq.ro/deep-thought/index.html
-    - project: http://www.apbeauty.dk/
-      visibility: cheap
-    - project: http://inprogress.neuronq.ro/cathara-ic/s/
+    - project: MADMIN Admin Theme
+      employer: WrapBootstrap
+      link: https://wrapbootstrap.com/theme/madmin-admin-theme-WB042R743
+      tags:
+        - front-end web development
+      techs:
+        - jQuery
+        - jQuery UI
+        - Flot
+        - Bootstrap
+    - project: Cathara Inner Circle private social network
+      link: http://inprogress.neuronq.ro/cathara-ic/s/
       visbility: eye-candy
+      tags:
+        - front-end web development
+      techs:
+        - jQuery
+        - Bootstrap
+        - PHP
 
 page_skills:
-  software_development:
-    web_back_end:
-      frameworks:
-        - name: Laravel
-          language: PHP
-        - name: Express
-          language: Node.JS
-        - name: Django
-          language: Python
-        - name: Ruby on Rails
-          language: Ruby
-      databases:
-        - MySQL / MariaDB
-        - MongoDB
-      testing:
-        - Laravel Unit & Integration Tests
-        - Jasmine for Node.js
-        - Webdriver & Selenium (E2E)
-        - Cucumber.js / Gherkin
-      API design:
-        - REST L2
-        - Basic API automated testing with Postman scripts
-      platforms:
-        - name: AWS
-          details: EC2, RDS
-        - name: Linux
-          details: Ubuntu Server
-      CMSs:
-        - WordPress
-        - DjangoCMS
-      ECommerce plaforms:
-        - WooCommerce
-        - Magento
-        - PrestaShop
-      APIs:
-        - Mandrill
-        - PayPal
-        - Stripe
-        - MixPanel PHP
-        - Intercom REST
-        - Twillio
-    big_data:
-      - AWS EMR Hadoop with mrjob (Python)
-    web_front_end:
-      technogies:
-        - Javascript (ES6, TypeScript)
-        - WebComponents
-        - HTML5, CSS3/4
-      frameworks:
-        - Angular
-        - Polymer
-        - Backbone
-      libraries:
-        - jQuery
-        - Underscore/Lodash
-        - Charting: C3, Flot
-        - D3
-        - Vanilla :)
-      styling:
-        - Flexbox
-        - CSS4 selectors
-        - SASS & Compass
-        - LESS
-        - Bootstrap styling framework
-        - Materialize CSS framework
-      APIs:
-        - Google Analytics
-        - MixPanel
-        - Intercom
-        - Contentful
-      tools:
-        - Gulp
-        - Grunt
-        - Webpack
-      testing:
-        - Jasmine
-    mobile_hybrid:
-      - Cordova
-    ai_and_machine_learning:
-      - familiarity with general principles and terminology
-      - SciPy, NumPy, NLTK (Python)
-    general_software_development:
-      - Version control systems: Git
-      - OOP design patterns
-      - Functional programming patterns
-      - Algorithms
-      - Clojure & ClojureScript
-      - Java
-      - Matlab/Octave
-      - C
-    mobile_native:
-      - Android
-  project_management:
-    - project leadership: team of less than 5
-    - technical co-founder: SaaS business
-  product_development:
-    - ECommerce related SaaS
-  uxi_design:
-    - wireframing
-      - Balsamiq, Moqups
-      - Whiteboard & Markers :)
-    - graphical design:
-      - Adobe Photoshop
-      - Adobe Photoshop
-      - Pen & Paper :)
+  title: Skills
+  browser_title: Skills
+  skills:
+    - title: <i class="fa fa-server" aria-hidden="true"></i> Backend Web Development
+      categories:
+        - title: <i class="fa fa-square" aria-hidden="true"></i> Frameworks & Languages
+          expanded: true
+          items:
+            - name: <span class="devicons devicons-laravel"></span> Laravel
+              expanded: true
+              language: <span class="devicons devicons-php"></span> <strong>PHP</strong>
+              desc: |
+                I've used the Laravel PHP framework (up to v5.2) in a
+                production setting in a number of projects, some started from scratch
+                by me, others maintained and expanded. This is the framework I'm most
+                confortable with from the PHP ecosystem, but I'm confident that I can
+                easily generalize the concepts and experience to any other framework I will
+                need to work with. 
+            - name: <span class="devicons devicons-nodejs_small"></span> Express
+              expanded: true
+              language: |
+                <span class="devicons devicons-nodejs"></span> <strong>Node.js</strong> /
+                <strong>Javascript</strong>
+              desc: |
+                I've used Node.js in a few small projects, and it is becoming my favorite platform for starting new web apps.
+                Express is a simple no-frills framework for getting things done and the
+                "new Javascript" brought by ES6 together with TypeScript are much more
+                productive and enjoyable for me than PHP, even with the advancements
+                brought by PHP 7.
+            - name: <span class="devicons devicons-django"></span> Django
+              language: <span class="devicons devicons-python"></span> <strong>Python</strong>
+              desc: |
+                Python is one of the languages I feel most productive in and Django is a
+                very pragmatic web framework that has evolved and kept up with the new
+                technologies and at the same time remained stable and well documented. I've
+                used Django professionally but nowadays I prefer Node.js for web apps and
+                I use Python for scraping, data-mining learning AI/ML.
+            - name: <span class="devicons devicons-ruby_on_rails"></span> Ruby on Rails
+              language: <span class="devicons devicons-ruby"></span> <strong>Ruby</strong>
+              desc: |
+                Ruby on Rails is the framework that first introduced me to "classic web MVC architecture" years ago, and I've applied the lessons from it while working
+                in other languages and frameworks. But I'm not a "Ruby developer" and I
+                don't really have experience working with Rails in production.
+              
+        - title: <i class="fa fa-database" aria-hidden="true"></i> Databases
+          expanded: true
+          items:
+            - <span class="devicons devicons-mysql lead-icon"></span> MySQL / MariaDB
+            - <span class="devicons devicons-mongodb lead-icon"></span> MongoDB
+            - <span class="devicons devicons-postgresql lead-icon"></span> PostgreSQL
+        - title: <i class="fa fa-check-square" aria-hidden="true"></i> Testing
+          expanded: true        
+          items:
+            - Laravel Unit & Integration Tests
+            - Jasmine for Node.js
+            - Webdriver & Selenium (E2E)
+            - Cucumber.js / Gherkin
+        - title: <i class="fa fa-cogs" aria-hidden="true"></i> API Design & Development
+          items:
+            - REST Level 2
+            - Basic API automated testing with Postman scripts
+        - title: <i class="fa fa-cloud" aria-hidden="true"></i> Platforms
+          items:
+            - name: <i class="fa fa-amazon" aria-hidden="true"></i> AWS
+              desc: EC2, RDS, EMR
+              expanded: true
+            - name: <i class="fa fa-linux" aria-hidden="true"></i> Linux
+              desc: Ubuntu Server
+              expanded: true
+        - title: <i class="fa fa-wpforms" aria-hidden="true"></i> CMSs
+          items:
+            - name: <span class="devicons devicons-wordpress lead-icon"></span> WordPress
+              desc: |
+                I've worked extensibly with WordPress, developing <strong>custom plugins</strong>,
+                <strong>custom themes</strong>, using it as "framework-CMS" at the basis of
+                complex applications, as a "content translations UI" for web-apps developed in
+                frameworks like Laravel, and I've also investigated using it via API to power
+                SPAs developed outside WP. <strong>WP is not my favorite platform</strong>
+                nowdays, but I can recognize situations where it is the right tool for the job
+                and I can use it appropriately.
+            - name: <span class="devicons devicons-django lead-icon"></span> DjangoCMS
+              desc: |
+                I've used DjangoCMS in a project that required a WordPress-like (from the user's
+                perspective) CMS on top of a Django-baseb web application. It's a stable and
+                extensible platform that can spare a lot of development effort.
+        - title: <i class="fa fa-shopping-bag" aria-hidden="true"></i> E-Commerce platforms
+          items:
+            - WooCommerce
+            - Magento
+            - PrestaShop
+        - title: <i class="fa fa-cog" aria-hidden="true"></i> APIs I've worked with
+          items:
+            - Mandrill
+            - PayPal
+            - Stripe
+            - MixPanel PHP
+            - Intercom REST
+            - Twillio
+    - title: <i class="fa fa-eye" aria-hidden="true"></i> Frontend Web Development
+      categories:
+        - title: Technogies (JS, ES6, TS, HTML5/CSS)
+          expanded: true
+          items:
+            - <span class="devicons devicons-javascript lead-icon"></span> Javascript (ES6, TypeScript)
+            - <span class="devicons devicons-html5 lead-icon"></span> HTML5, CSS3
+            - WebComponents
+        - title: Frameworks
+          expanded: true
+          items:
+            - <span class="devicons devicons-angular lead-icon"></span> Angular
+            - <span class="devicons devicons-backbone lead-icon"></span> Backbone
+            - Polymer
+        - title: Libraries
+          expanded: true
+          items:        
+            - <span class="devicons devicons-jquery lead-icon"></span> jQuery
+            - Underscore/Lodash
+            - "Charting: C3, Flot"
+            - D3
+            - vanilla :)
+        - title: Styling
+          items:        
+            - Flexbox
+            - CSS4 selectors
+            - SASS & Compass
+            - LESS
+            - Bootstrap styling framework
+            - Materialize CSS framework
+        - title: APIs
+          items:        
+            - Google Analytics
+            - MixPanel
+            - Intercom
+            - Contentful
+        - title: Tools
+          items:        
+            - Gulp
+            - Grunt
+            - Webpack
+        - title: Testing
+          items:
+            - Jasmine
+    - title: Mobile Apps development - Hybrid
+      items:    
+        - Cordova
+        - Intel XDK
+    - title: Machine Learning and AI    
+      content: |
+        <p>I'm passionate about the fields of Machine Learning and AI and I'm broadly familiarity
+        with the general principles and basic terminology. I've player with some of the Python
+        machine learning toolkits like SciPy and NLTK and with NumPy that underlies them. I'm
+        currently going through
+        <a href="https://classroom.udacity.com/courses/cs271/lessons/48688925/concepts/29449387610923">Coursera's CS271 - Intro to Artificial Intelligence</a>
+        online class in a self-paced rhythm. And I also read about all the recent developemnts
+        in the AI field.</p> 
+    - title: Big Data
+      content: |
+        <ul class="collection">
+          <li class="collection-item">Hadoop
+          <li class="collection-item">AWS Elastic MapReduce
+          <li class="collection-item">mrjob - python framework for writing Hadoop map-reduce jobs
+        </ul>
+        <p>I've developed a very small application implementing a map-reduce
+        job in Python using mrjob framework, and ran the application on an AWS EMR
+        Hadoop cluster that I've set up, in order to process the Common Crawl
+        archive datasets and extract specific data about crawled ecommerce
+        websites.</p>
+    - title: General Software Development Skills
+      items:    
+        - "Version control systems: Git, SVN"
+        - OOP design patterns
+        - Algorithms
+        - Functional programming patterns
+        - "Java: very little experience writing production code in it"
+        - "Matlab/Octave: I've been a bit of a biotech and physics geek before becoming a software developer and Matlab was a cool toy to play with, and I've kind of rediscovered it due to my fresh interest in Machine Learning"
+        - "C & C++: the language I've first learned to program in but rarely used professionally"
+    - title: Mobile Apps development - Native
+      content: |
+        <p>I'm currently working to implement a few personal Android app ideas and at the
+        same time learning Android development and brushing off my rusty
+        Java programming skills :)</p>
+    - title: Tech Team Leadership & Project Management
+      content: |
+        <p>I've been a <strong>team-leader for very small teams (up to 4 developers)</strong> in a
+        startup-style environment. By taking responsibility for the projects, coordinating
+        with members of other teams (Marketing and Customer Support), participating in recruitment,
+        project planning and reporting directly with to the company owners I fullfilled the role
+        of a small team project manager combined with that of tech lead.</p>
+        <p>As a <strong>technical co-founder in a small startup</strong> I've been put again in the
+        position of functioning both as a lead-developer and project manager.</p>
+    - title: Product Development (SaaS)
+      content: |
+        <p>As a technical co-founder in a SaaS startup, I've been involved in all the stages of
+        <strong>product development</strong>, from idea to development and design specifications.</p>
+    - title: UX & UI design
+      content: |
+        <p>Even though I a developer at core, I like to participate in meetings about UX and UI design.
+        I'm confortable working with wireframing tools like <strong>Balsamiq</strong> and
+        <strong>Moqups</strong> and with graphic design tools like <strong>Adobe Photoshop</strong>
+        and <strong>Adobe Illustrator</strong>.</p>
+        <p>I'd like to think that I have passable graphic design skills from the early days when I used
+        to do design+branding+development web projects, but nowadays I always prefer to leave all graphic
+        design work to the real professionals :)</p>
 
 page_contact:
+  browser_title: Contact
+  title: Contact

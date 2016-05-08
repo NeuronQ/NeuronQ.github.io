@@ -1,5 +1,4 @@
-<% p = root.page = page_work %>
-
+<% p = root.page = page_work -%>
 <% include _head %>
 
 </head>
@@ -16,7 +15,7 @@
 
   <section class="projects">
     
-    <div class="filters-bar">
+    <!--<div class="filters-bar">
       <div class="filter-by filter-by-tags">
         <div class="filter-by-label">
           Filter by type
@@ -29,28 +28,37 @@
           <% }) %>
         </div>
       </div>
-    </div>
+    </div>-->
+    
+    <br><br>
     
     <div class="items row">
       <% p.projects.forEach(project => { %>
         <div class="col m6 s12">
           <div class="item project">
             <div class="main-box z-depth-1">
-              <div class="title">                
-                <% if (project.employer && project.project && project.employer != project.project) { %>
-                  <div class="project"><%= project.project %></div> @
-                <% } %>                
-                <div class="employer"><%= project.employer %></div>
-              </div>
-              <div class="techs">
-                <% project.techs.forEach(tech => { %>
-                  <div class="tech chip chip-small"><%- tech %></div>
-                <% }) %>
-              </div> 
+              <a href="<%- project.link %>"  rel="nofollow" class="title">                
+                <% if (project.project && project.employer != project.project) { %>
+                  <div class="project"><%= project.project %></div>
+                <% } %>
+                <%= (project.project && project.employer && project.employer != project.project) ? '@' : '' %>                
+                <% if (project.employer) { %>
+                  <div class="employer"><%= project.employer %></div>
+                <% } %>
+              </a>
+              <% if (project.techs) { %>
+                <div class="techs">
+                  <% project.techs.forEach(tech => { %>
+                    <div class="tech chip chip-small"><%- tech %></div>
+                  <% }) %>
+                </div> 
+              <% } %>
             </div><!-- /.main-box -->
-            <div class="tags">
-              (<%- project.tags.map(tag => `<div class="tag">${tag}</div>`).join(', ') %>)
-            </div>
+            <% if (project.tags) { %>
+              <div class="tags">
+                (<%- project.tags.map(tag => `<div class="tag">${tag}</div>`).join(', ') %>)
+              </div>
+            <% } %>
           </div>
         </div>
       <% }) %>
