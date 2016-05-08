@@ -26,7 +26,7 @@ page_work:
         - Laravel
         - PHP
         - MySQL
-    - employer: Zopyo
+    - project: Zopyo
       tags:
         - front-end web development
         - back-end web development
@@ -44,6 +44,7 @@ page_work:
         - Cordova
         - Selenium/Webdriver
         - Linux (Ubuntu)
+      visibility: confidential
     - employer: Otonomic
       tags:
         - back-end web development
@@ -92,6 +93,15 @@ page_work:
         - Django
         - Python
         - MySQL
+    - project: http://www.colaistepobailbheanntrai.com/
+      visibility: cheap
+    - project: https://wrapbootstrap.com/theme/madmin-admin-theme-WB042R743
+    - project: http://www.amazer.me/
+    - project: http://inprogress.neuronq.ro/deep-thought/index.html
+    - project: http://www.apbeauty.dk/
+      visibility: cheap
+    - project: http://inprogress.neuronq.ro/cathara-ic/s/
+      visbility: eye-candy
 
 page_skills:
   software_development:
