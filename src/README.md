@@ -7,6 +7,17 @@ npm install -g concurrently
 npm install -g lite-server
 ```
 
+## Do this first
+
+If you don't do this first some of the other stuff can fail:
+
+```
+cd src
+npm install
+bower install
+npm build
+```
+
 ## How to tun local HTTP server and auto-recompile on change
 
 ```

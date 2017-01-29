@@ -13,6 +13,12 @@
       <h1><%= p.title %></h1>
   </header>
 
+  <hr>
+
+  <strong>Note:</strong> If you're looking for my CV or Resume, <a href="/contact.html">contact me</a>.
+
+  <hr>
+
   <section class="projects">
     
     <!--<div class="filters-bar">
@@ -36,7 +42,7 @@
       <% p.projects.forEach(project => { %>
         <div class="col m6 s12">
           <div class="item project">
-            <div class="main-box z-depth-1">
+            <div class="main-box z-depth-1" <%- project.bg ? `style="background:${project.bg}"` : '' %>>
               <a href="<%- project.link %>"  rel="nofollow" class="title">                
                 <% if (project.project && project.employer != project.project) { %>
                   <div class="project"><%= project.project %></div>

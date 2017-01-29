@@ -8,7 +8,7 @@ page_home:
 
 page_work:
   browser_title: Work
-  title: My Work
+  title: Some things I've worked on...
   filter_by_tags:
     - front-end web development
     - back-end web development
@@ -17,17 +17,18 @@ page_work:
     - branding
     - system administration
   projects:
-    - project: Amazer viral socia marketing web-app
-      # link: http://www.amazer.me/
-      tags:
-        - back-end web development
-        - front-end web development
-      techs:
-        - Facebook OpenGraph API
-        - HTML2Canvas
-        - WordPress
+    # - project: Amazer viral socia marketing web-app
+    #   # link: http://www.amazer.me/
+    #   tags:
+    #     - back-end web development
+    #     - front-end web development
+    #   techs:
+    #     - Facebook OpenGraph API
+    #     - HTML2Canvas
+    #     - WordPress
     - project: Zopyo
-      # link: http://www.zopyo.com
+      link: http://www.zopyo.com
+      bg: "#222 url(/img/work/z.png) 50% 41px no-repeat"
       tags:
         - back-end web development
         - front-end web development
@@ -42,9 +43,7 @@ page_work:
         - Python
         - Mrjob (for Hadoop on AWS EMR)
         - MongoDB
-        - Cordova
         - Selenium/Webdriver
-        - Linux (Ubuntu)
       visibility: confidential
     - employer: Rivert
       project: Multiple web back-end, web front-end, mobile-apps and web infrastructure projects
@@ -56,17 +55,10 @@ page_work:
         - CodeIgniter
         - PHP
         - MySQL
-    - employer: Otonomic
-      tags:
-        - back-end web development
-      techs:
-        - WordPress
-        - PHP
-        - Backbone.js
-        - Angular
-        - MySQL
+        - Cordova
     - project: Deep Thought Admin UI Frontend Construction Kit
       link: http://inprogress.neuronq.ro/deep-thought/index.html
+      bg: "#222 url(/img/work/dta.jpg) 50% 41px no-repeat"
       tags:
         - front-end web development
       techs:
@@ -79,6 +71,7 @@ page_work:
         - Jade
     - project: Done Hedgefund
       link: http://www.done.nl/
+      bg: "#222 url(/img/work/dn.png) 50% 41px no-repeat"
       tags:
         - front-end web development
         - back-end web development
@@ -89,6 +82,7 @@ page_work:
         - MySQL
     - project: Jezabel Coffee
       link: http://www.jezabelcafe.ro/
+      bg: "#222 url(/img/work/jz.jpg) 50% 41px no-repeat"
       tags:
         - front-end web development
         - back-end web development
@@ -99,6 +93,7 @@ page_work:
         - MySQL
     - project: CCI English website & online-tutoring marketplace
       link: https://www.facebook.com/ccienglish/
+      bg: "#eee url(/img/work/cci.jpg) 50% 60px no-repeat"
       tags:
         - front-end web development
         - back-end web development
@@ -110,6 +105,7 @@ page_work:
         - MySQL
     - project: Art Gallery Management System
       employer: Finarta via VWorker
+      bg: "#cde url(/img/misc/Ashpd_blueprint_1_small.jpg) 50% 50%"
       tags:
         - back-end web development
         - front-end web development
@@ -122,6 +118,7 @@ page_work:
     - project: MADMIN Admin Theme
       employer: WrapBootstrap
       link: https://wrapbootstrap.com/theme/madmin-admin-theme-WB042R743
+      bg: "#eeeeee url(/img/work/madmin.png) 50% 0 no-repeat; background-size: 100% auto;"
       tags:
         - front-end web development
       techs:
@@ -132,6 +129,7 @@ page_work:
     - project: Cathara Inner Circle private social network
       link: http://inprogress.neuronq.ro/cathara-ic/s/
       visbility: eye-candy
+      bg: "#00478d url(/img/work/ic.jpg) 50% 0 no-repeat"
       tags:
         - front-end web development
       techs:
@@ -291,10 +289,9 @@ page_skills:
         <p>I'm passionate about the fields of Machine Learning and AI and I'm broadly familiarity
         with the general principles and basic terminology. I've player with some of the Python
         machine learning toolkits like SciPy and NLTK and with NumPy that underlies them. I'm
-        currently going through
-        <a href="https://classroom.udacity.com/courses/cs271/lessons/48688925/concepts/29449387610923">Coursera's CS271 - Intro to Artificial Intelligence</a>
-        online class in a self-paced rhythm. And I also read about all the recent developemnts
-        in the AI field.</p> 
+        currently going through Udacity's Machine Learning Nanodegree, at a semi-self-paced rate, in my free time.
+        And I also read about all the recent developemnts
+        in the AI field.</p>
     - title: Big Data
       content: |
         <ul class="collection">
