@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,12 +18,14 @@
   <!-- Main Stylesheet -->
   <link type="text/css" rel="stylesheet" href="/css/main.css"  media="screen,projection"/>
 
+  <!-- Main Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
   <!-- Google Material Icons Font -->
   <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Main Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+  <!-- Devicons Font -->
+  <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
   
 
 </head>
@@ -37,57 +37,403 @@
 <div id="navigation" class="z-depth-1 trans-r">
     <ul class="nav-links">
         <li>
-            <a href="#">Home</a>
+            <a href="/">Home</a>
         </li>
         <li>
-            <a href="#">Work</a>
+            <a href="/work.html">Work</a>
         </li>
         <li>
-            <a href="#">Skills</a>
+            <a href="/skills.html">Skills</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a href="/contact.html">Contact</a>
         </li>
     </ul>
 </div>
 
 
-
-
 <main id="main">
 
   <header id="header">
-      <h1>My Work</h1>
+      <h1>Some things I&#39;ve worked on...</h1>
   </header>
-
-  <p>Testing deployment in new setup.</p>
-
-  <pre>
-    {&#34;browser_title&#34;:&#34;Work&#34;,&#34;title&#34;:&#34;My Work&#34;,&#34;filter_by_tags&#34;:[&#34;front-end web development&#34;,&#34;back-end web development&#34;,&#34;mobile apps development (hybrid)&#34;,&#34;web design&#34;,&#34;branding&#34;,&#34;system administration&#34;],&#34;projects&#34;:[{&#34;employer&#34;:&#34;Rivert&#34;,&#34;tags&#34;:[&#34;back-end web development&#34;,&#34;mobile apps development (hybrid)&#34;],&#34;techs&#34;:[&#34;Laravel&#34;,&#34;PHP&#34;,&#34;MongoDB&#34;]},{&#34;employer&#34;:&#34;Zopyo&#34;,&#34;tags&#34;:[&#34;front-end web development&#34;,&#34;back-end web development&#34;],&#34;techs&#34;:[&#34;Laravel&#34;,&#34;PHP&#34;,&#34;Polymer&#34;,&#34;AWS (EC2, RDS, EMR)&#34;,&#34;Node.js&#34;,&#34;Kue&#34;,&#34;Redis&#34;,&#34;Python&#34;,&#34;mrjob (for Hadoop on AWS EMR)&#34;,&#34;MongoDB&#34;,&#34;Cordova&#34;,&#34;Selenium/Webdriver&#34;,&#34;Linux (Ubuntu)&#34;]},{&#34;employer&#34;:&#34;Otonomic&#34;,&#34;tags&#34;:[&#34;back-end web development&#34;],&#34;techs&#34;:[&#34;WordPress&#34;,&#34;PHP&#34;,&#34;Backbone.js, Angular 1&#34;,&#34;MySQL&#34;]},{&#34;project&#34;:&#34;Done Hedgefund&#34;,&#34;link&#34;:&#34;http://www.done.nl/&#34;,&#34;tags&#34;:[&#34;front-end web development&#34;,&#34;back-end web development&#34;],&#34;employer&#34;:&#34;New Tribe Agency&#34;,&#34;techs&#34;:[&#34;WordPress&#34;,&#34;PHP&#34;,&#34;MySQL&#34;]},{&#34;project&#34;:&#34;Jezabel Coffee&#34;,&#34;link&#34;:&#34;http://www.jezabelcafe.ro/&#34;,&#34;tags&#34;:[&#34;front-end web development&#34;,&#34;back-end web development&#34;],&#34;employer&#34;:&#34;New Tribe Agency&#34;,&#34;techs&#34;:[&#34;WordPress&#34;,&#34;PHP&#34;,&#34;MySQL&#34;]},{&#34;project&#34;:&#34;CCI English&#34;,&#34;link&#34;:&#34;https://www.facebook.com/ccienglish/&#34;,&#34;tags&#34;:[&#34;front-end web development&#34;,&#34;back-end web development&#34;],&#34;employer&#34;:&#34;CCI English&#34;,&#34;techs&#34;:[&#34;Django&#34;,&#34;Django CMS&#34;,&#34;Python&#34;,&#34;MySQL&#34;]},{&#34;employer&#34;:&#34;Finarta via VWorker&#34;,&#34;tags&#34;:[&#34;front-end web development&#34;,&#34;back-end web development&#34;],&#34;techs&#34;:[&#34;Django&#34;,&#34;Python&#34;,&#34;MySQL&#34;]}]}
-  </pre>
-
-  <button class="btn btn-block toggle-sidebar">Toggle sidebar</button>
-  <a href="/index.html">Home</a>
 
   <hr>
 
-  <div class="row">
-    <div class="col l3 m6 s12">1</div>
-    <div class="col l3 m6 s12">2</div>
-    <div class="col l3 m6 s12">3</div>
-    <div class="col l3 m6 s12">4</div>
-    <div class="col l3 m6 s12">5</div>
-    <div class="col l3 m6 s12">6</div>
-    <div class="col l3 m6 s12">7</div>
-    <div class="col l3 m6 s12">8</div>
-  </div>
+  <strong>Note:</strong> If you're looking for my CV or Resume, <a href="/contact.html">contact me</a>.
+
+  <hr>
+
+  <section class="projects">
+    
+    <!--<div class="filters-bar">
+      <div class="filter-by filter-by-tags">
+        <div class="filter-by-label">
+          Filter by type
+        </div>
+        <div class="tags">
+          
+            <div class="tag chip" data-tag-name="front-end web development">
+              front-end web development
+            </div>
+          
+            <div class="tag chip" data-tag-name="back-end web development">
+              back-end web development
+            </div>
+          
+            <div class="tag chip" data-tag-name="mobile apps development - hybrid">
+              mobile apps development - hybrid
+            </div>
+          
+            <div class="tag chip" data-tag-name="web design">
+              web design
+            </div>
+          
+            <div class="tag chip" data-tag-name="branding">
+              branding
+            </div>
+          
+            <div class="tag chip" data-tag-name="system administration">
+              system administration
+            </div>
+          
+        </div>
+      </div>
+    </div>-->
+    
+    <br><br>
+    
+    <div class="items row">
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#222 url(/img/work/z.png) 50% 41px no-repeat">
+              <a href="http://www.zopyo.com" rel="nofollow" class="title">                
+                
+                  <div class="project">Zopyo</div>
+                
+                                
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">Laravel</div>
+                  
+                    <div class="tech chip chip-small">PHP</div>
+                  
+                    <div class="tech chip chip-small">Polymer</div>
+                  
+                    <div class="tech chip chip-small">AWS (EC2, RDS, EMR)</div>
+                  
+                    <div class="tech chip chip-small">Node.js</div>
+                  
+                    <div class="tech chip chip-small">Kue</div>
+                  
+                    <div class="tech chip chip-small">Redis</div>
+                  
+                    <div class="tech chip chip-small">Python</div>
+                  
+                    <div class="tech chip chip-small">Mrjob (for Hadoop on AWS EMR)</div>
+                  
+                    <div class="tech chip chip-small">MongoDB</div>
+                  
+                    <div class="tech chip chip-small">Selenium/Webdriver</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">back-end web development</div>, <div class="tag">front-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" >
+              <a href="" rel="nofollow" class="title">                
+                
+                  <div class="project">Multiple web back-end, web front-end, mobile-apps and web infrastructure projects</div>
+                
+                @                
+                
+                  <div class="employer">Rivert</div>
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">Laravel</div>
+                  
+                    <div class="tech chip chip-small">CodeIgniter</div>
+                  
+                    <div class="tech chip chip-small">PHP</div>
+                  
+                    <div class="tech chip chip-small">MySQL</div>
+                  
+                    <div class="tech chip chip-small">Cordova</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">back-end web development</div>, <div class="tag">mobile apps development - hybrid</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#222 url(/img/work/dta.jpg) 50% 41px no-repeat">
+              <a href="http://inprogress.neuronq.ro/deep-thought/index.html" rel="nofollow" class="title">                
+                
+                  <div class="project">Deep Thought Admin UI Frontend Construction Kit</div>
+                
+                                
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">jQuery</div>
+                  
+                    <div class="tech chip chip-small">jQuery UI</div>
+                  
+                    <div class="tech chip chip-small">Flot</div>
+                  
+                    <div class="tech chip chip-small">Bootstrap</div>
+                  
+                    <div class="tech chip chip-small">Node.js</div>
+                  
+                    <div class="tech chip chip-small">Express</div>
+                  
+                    <div class="tech chip chip-small">Jade</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">front-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#222 url(/img/work/dn.png) 50% 41px no-repeat">
+              <a href="http://www.done.nl/" rel="nofollow" class="title">                
+                
+                  <div class="project">Done Hedgefund</div>
+                
+                @                
+                
+                  <div class="employer">New Tribe Agency</div>
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">WordPress</div>
+                  
+                    <div class="tech chip chip-small">PHP</div>
+                  
+                    <div class="tech chip chip-small">MySQL</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">front-end web development</div>, <div class="tag">back-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#222 url(/img/work/jz.jpg) 50% 41px no-repeat">
+              <a href="http://www.jezabelcafe.ro/" rel="nofollow" class="title">                
+                
+                  <div class="project">Jezabel Coffee</div>
+                
+                @                
+                
+                  <div class="employer">New Tribe Agency</div>
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">WordPress</div>
+                  
+                    <div class="tech chip chip-small">PHP</div>
+                  
+                    <div class="tech chip chip-small">MySQL</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">front-end web development</div>, <div class="tag">back-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#eee url(/img/work/cci.jpg) 50% 60px no-repeat">
+              <a href="https://www.facebook.com/ccienglish/" rel="nofollow" class="title">                
+                
+                  <div class="project">CCI English website &amp; online-tutoring marketplace</div>
+                
+                @                
+                
+                  <div class="employer">CCI English</div>
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">Django</div>
+                  
+                    <div class="tech chip chip-small">Django CMS</div>
+                  
+                    <div class="tech chip chip-small">Python</div>
+                  
+                    <div class="tech chip chip-small">MySQL</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">front-end web development</div>, <div class="tag">back-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#cde url(/img/misc/Ashpd_blueprint_1_small.jpg) 50% 50%">
+              <a href="" rel="nofollow" class="title">                
+                
+                  <div class="project">Art Gallery Management System</div>
+                
+                @                
+                
+                  <div class="employer">Finarta via VWorker</div>
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">Django</div>
+                  
+                    <div class="tech chip chip-small">Python</div>
+                  
+                    <div class="tech chip chip-small">Microservices</div>
+                  
+                    <div class="tech chip chip-small">XML-RPC</div>
+                  
+                    <div class="tech chip chip-small">MySQL</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">back-end web development</div>, <div class="tag">front-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#eeeeee url(/img/work/madmin.png) 50% 0 no-repeat; background-size: 100% auto;">
+              <a href="https://wrapbootstrap.com/theme/madmin-admin-theme-WB042R743" rel="nofollow" class="title">                
+                
+                  <div class="project">MADMIN Admin Theme</div>
+                
+                @                
+                
+                  <div class="employer">WrapBootstrap</div>
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">jQuery</div>
+                  
+                    <div class="tech chip chip-small">jQuery UI</div>
+                  
+                    <div class="tech chip chip-small">Flot</div>
+                  
+                    <div class="tech chip chip-small">Bootstrap</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">front-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="col m6 s12">
+          <div class="item project">
+            <div class="main-box z-depth-1" style="background:#00478d url(/img/work/ic.jpg) 50% 0 no-repeat">
+              <a href="http://inprogress.neuronq.ro/cathara-ic/s/" rel="nofollow" class="title">                
+                
+                  <div class="project">Cathara Inner Circle private social network</div>
+                
+                                
+                
+              </a>
+              
+                <div class="techs">
+                  
+                    <div class="tech chip chip-small">jQuery</div>
+                  
+                    <div class="tech chip chip-small">Bootstrap</div>
+                  
+                    <div class="tech chip chip-small">PHP</div>
+                  
+                </div> 
+              
+            </div><!-- /.main-box -->
+            
+              <div class="tags">
+                (<div class="tag">front-end web development</div>)
+              </div>
+            
+          </div>
+        </div>
+      
+    </div>
+  </section>
 
 </main>
 
 
 
 <footer id="footer">
-    <p>FOOTER</p>
+    <div class="copyright pull-right">
+        &copy; 2116 Andrei Anton
+    </div>
 </footer>
 
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
