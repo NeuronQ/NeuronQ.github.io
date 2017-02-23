@@ -1,5 +1,4 @@
 'use strict';
-
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var rename = require("gulp-rename");
@@ -57,9 +56,18 @@ gulp.task('scripts-copy', function () {
 /*
  * Images
  */
- gulp.task('images-copy', function () {
-   return gulp.copy('./img/**/*', '../dist');
- });
+gulp.task('images-copy', function () {
+ return gulp.copy('./img/**/*', '../dist');
+});
+
+
+/*
+ * Misc. files copy
+ */
+gulp.task('misc-files-copy', function () {
+ return gulp.copy('./robots.txt', '../dist');
+});
+
 
 
 /*
@@ -70,4 +78,5 @@ gulp.task('watch', function () {
   gulp.watch('./scripts/**/*', ['scripts-copy']);
   gulp.watch('./sass/**/*.scss', ['sass']);
   gulp.watch('./images/**', ['images-copy']);
+  gulp.watch('./*', ['misc-files-copy']);
 });

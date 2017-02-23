@@ -4,7 +4,6 @@ page: null
 
 page_home:
   title: Andrei Anton | Neuron Q
-  text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aperiam, numquam ad aspernatur, aliquid accusantium rem laborum recusandae ut nisi assumenda velit sequi quasi, officiis officia enim reprehenderit ex harum!
 
 page_work:
   browser_title: Work
@@ -146,6 +145,17 @@ page_skills:
         - title: <i class="fa fa-square" aria-hidden="true"></i> Frameworks & Languages
           expanded: true
           items:
+            - name: <span class="devicons devicons-nodejs_small"></span> Express
+              expanded: true
+              language: |
+                <span class="devicons devicons-nodejs"></span> <strong>Node.js</strong> /
+                <strong>Javascript</strong>
+              desc: |
+                Node.js is my new favorite platform for starting new web apps and microservices.
+                Express is a simple no-frills framework for getting things done and the
+                "new Javascript" brought by ES6 is much more
+                productive and enjoyable for me than PHP, even with the advancements
+                brought by PHP 7.
             - name: <span class="devicons devicons-laravel"></span> Laravel
               expanded: true
               language: <span class="devicons devicons-php"></span> <strong>PHP</strong>
@@ -153,20 +163,9 @@ page_skills:
                 I've used the Laravel PHP framework (up to v5.2) in a
                 production setting in a number of projects, some started from scratch
                 by me, others maintained and expanded. This is the framework I'm most
-                confortable with from the PHP ecosystem, but I'm confident that I can
+                confortable with from the PHP ecosystem, but I can
                 easily generalize the concepts and experience to any other framework I will
                 need to work with. 
-            - name: <span class="devicons devicons-nodejs_small"></span> Express
-              expanded: true
-              language: |
-                <span class="devicons devicons-nodejs"></span> <strong>Node.js</strong> /
-                <strong>Javascript</strong>
-              desc: |
-                I've used Node.js in a few small projects, and it is becoming my favorite platform for starting new web apps.
-                Express is a simple no-frills framework for getting things done and the
-                "new Javascript" brought by ES6 together with TypeScript are much more
-                productive and enjoyable for me than PHP, even with the advancements
-                brought by PHP 7.
             - name: <span class="devicons devicons-django"></span> Django
               language: <span class="devicons devicons-python"></span> <strong>Python</strong>
               desc: |
@@ -179,8 +178,7 @@ page_skills:
               language: <span class="devicons devicons-ruby"></span> <strong>Ruby</strong>
               desc: |
                 Ruby on Rails is the framework that first introduced me to "classic web MVC architecture" years ago, and I've applied the lessons from it while working
-                in other languages and frameworks. But I'm not a "Ruby developer" and I
-                don't really have experience working with Rails in production.
+                in other languages and frameworks.
               
         - title: <i class="fa fa-database" aria-hidden="true"></i> Databases
           expanded: true
@@ -191,8 +189,8 @@ page_skills:
         - title: <i class="fa fa-check-square" aria-hidden="true"></i> Testing
           expanded: true        
           items:
+            - Mocha & Jasmine for Node.js
             - Laravel Unit & Integration Tests
-            - Jasmine for Node.js
             - Webdriver & Selenium (E2E)
             - Cucumber.js / Gherkin
         - title: <i class="fa fa-cogs" aria-hidden="true"></i> API Design & Development
