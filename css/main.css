@@ -152,7 +152,11 @@ body {
     height: 200px;
     background: url(/img/misc/light-bulb-image-583x387.jpg) 50% 0;
     background-size: cover; }
-    /* line 152, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    @media (min-width: 400px) {
+      /* line 146, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+      .projects .items .project .main-box {
+        height: auto; } }
+    /* line 157, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .main-box .title {
       position: absolute;
       top: 0;
@@ -162,10 +166,10 @@ body {
       padding: 10px;
       color: #fff;
       font-family: "Montserrat", sans-serif; }
-      /* line 163, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+      /* line 168, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
       .projects .items .project .main-box .title > * {
         display: inline; }
-    /* line 168, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    /* line 173, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .main-box .techs {
       position: absolute;
       bottom: 0;
@@ -173,18 +177,18 @@ body {
       right: 0;
       background: rgba(0, 0, 0, 0.2);
       padding: 10px; }
-      /* line 175, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+      /* line 180, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
       .projects .items .project .main-box .techs .tech {
         background: #123; }
-  /* line 181, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  /* line 186, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
   .projects .items .project .tags {
     padding: 10px;
     text-align: center; }
-    /* line 185, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    /* line 190, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .tags, .projects .items .project .tags * {
       text-align: center;
       font-style: italic; }
-    /* line 190, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    /* line 195, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .tags .tag {
       display: inline-block;
       opacity: 0.75; }
@@ -192,7 +196,7 @@ body {
 /**
  * Page Skills
  */
-/* line 202, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 207, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .expand-or-collapse-all-skills-btn {
   cursor: pointer;
   margin: 10px 0 0 0; }
