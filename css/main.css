@@ -38,8 +38,11 @@ body {
   background-position: 100% 0;
   background-size: cover;
   background-attachment: fixed; }
+  /* line 13, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  body.page-work, body.page-skills, body.page-contact {
+    min-width: 430px; }
 
-/* line 19, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 22, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 #main {
   max-width: 992px;
   overflow: hidden;
@@ -49,7 +52,7 @@ body {
   border: solid rgba(51, 112, 156, 0.34);
   border-width: 0 1px 1px 0; }
 
-/* line 29, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 32, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 #footer {
   max-width: 992px;
   color: rgba(255, 255, 255, 0.86);
@@ -60,19 +63,19 @@ body {
 /**
  * Transitions
  */
-/* line 41, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 44, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .trans, .trans-r, .trans-r * {
   transition: all 300ms ease-in-out; }
 
 /**
  * Chips
  */
-/* line 49, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 52, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .chip {
   background: #4285f4;
   color: #fff; }
 
-/* line 53, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 56, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .chip-small {
   padding: 0 8px;
   height: auto;
@@ -82,28 +85,28 @@ body {
 /**
  * Nested Collapsibles
  */
-/* line 65, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 68, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .collapsible li {
   background: #fff; }
 
-/* line 68, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 71, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .collapsible .collapsible-header {
   font-family: "Montserrat", sans-serif;
   font-weight: 600; }
 
-/* line 72, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 75, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .collapsible.collapsible-flat {
   box-shadow: none; }
 
-/* line 75, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 78, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .collapsible.collapsible-light {
   box-shadow: none;
   border: 0; }
-  /* line 78, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  /* line 81, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
   .collapsible.collapsible-light .collapsible-body {
     border: 0; }
 
-/* line 83, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 86, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .collapsible.collapsible-inverted > li > .collapsible-header {
   background: #333;
   color: #fff;
@@ -111,52 +114,48 @@ body {
   margin-bottom: 1px;
   font-weight: normal; }
 
-/* line 93, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 96, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .collapsible .collapsible {
   margin: 30px 25px; }
 
 /**
  * Lists
  */
-/* line 106, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 109, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .collection .collection-item {
   padding: 10px 15px; }
-  /* line 108, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  /* line 111, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
   .collection .collection-item .devicons.lead-icon {
     margin: 0 10px 0 0; }
 
 /**
  * Projects
  */
-/* line 121, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 124, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .projects .filters-bar .filter-by {
   text-align: center;
   line-height: 3.75rem;
   margin: 0 0 10px 0; }
-  /* line 125, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  /* line 128, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
   .projects .filters-bar .filter-by .filter-by-label {
     display: inline-block;
     line-height: 32px;
     margin: 0 5px 0 0; }
-  /* line 130, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  /* line 133, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
   .projects .filters-bar .filter-by.filter-by-tags {
     display: inline-block; }
 
-/* line 142, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 145, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .projects .items .project {
   margin-bottom: 10px;
   min-height: 245px; }
-  /* line 146, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  /* line 149, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
   .projects .items .project .main-box {
     position: relative;
     height: 200px;
     background: url(/img/misc/light-bulb-image-583x387.jpg) 50% 0;
     background-size: cover; }
-    @media (min-width: 400px) {
-      /* line 146, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
-      .projects .items .project .main-box {
-        height: auto; } }
-    /* line 157, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    /* line 155, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .main-box .title {
       position: absolute;
       top: 0;
@@ -166,10 +165,10 @@ body {
       padding: 10px;
       color: #fff;
       font-family: "Montserrat", sans-serif; }
-      /* line 168, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+      /* line 166, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
       .projects .items .project .main-box .title > * {
         display: inline; }
-    /* line 173, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    /* line 171, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .main-box .techs {
       position: absolute;
       bottom: 0;
@@ -177,18 +176,18 @@ body {
       right: 0;
       background: rgba(0, 0, 0, 0.2);
       padding: 10px; }
-      /* line 180, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+      /* line 178, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
       .projects .items .project .main-box .techs .tech {
         background: #123; }
-  /* line 186, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+  /* line 184, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
   .projects .items .project .tags {
     padding: 10px;
     text-align: center; }
-    /* line 190, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    /* line 188, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .tags, .projects .items .project .tags * {
       text-align: center;
       font-style: italic; }
-    /* line 195, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+    /* line 193, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
     .projects .items .project .tags .tag {
       display: inline-block;
       opacity: 0.75; }
@@ -196,7 +195,7 @@ body {
 /**
  * Page Skills
  */
-/* line 207, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
+/* line 205, /home/neuronq/wip/neuronq.github.io/src/sass/_general.scss */
 .expand-or-collapse-all-skills-btn {
   cursor: pointer;
   margin: 10px 0 0 0; }
