@@ -243,9 +243,9 @@ body {
       transform-origin: 0 0;
       transform: rotateZ(-90deg) translate(-100%); }
 
-/* line 48, /home/neuronq/wip/neuronq.github.io/src/sass/_nav.scss */
+/* line 50, /home/neuronq/wip/neuronq.github.io/src/sass/_nav.scss */
 body.expanded-nav #navigation {
   width: 105px; }
-  /* line 51, /home/neuronq/wip/neuronq.github.io/src/sass/_nav.scss */
+  /* line 53, /home/neuronq/wip/neuronq.github.io/src/sass/_nav.scss */
   body.expanded-nav #navigation li a {
     transform: rotateZ(0deg); }
