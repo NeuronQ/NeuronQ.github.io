@@ -10,6 +10,9 @@ body {
   background-position: 100% 0;
   background-size: cover;
   background-attachment: fixed;
+  &.page-work, &.page-skills, &.page-contact {
+    min-width: 430px;
+  }
 }
 
 #header {
